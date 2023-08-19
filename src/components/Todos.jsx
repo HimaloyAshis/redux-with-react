@@ -21,7 +21,7 @@ const Todos = () => {
             {error && <h3>{error.message}</h3>}
             {
                 todos && todos.map(todo => {
-                    return <article key={todo.id} >
+                    return <article key={todo.id} className='grid md:grid-cols-3  lg:grid-cols-4 bg-slate-400'>
                         <h4>{todo.id}</h4>
                         <h4> {todo.title}</h4>
                     </article>
