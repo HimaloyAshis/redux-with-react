@@ -13,3 +13,5 @@ const getAllTodos = ()=> async (dispatch) =>{
         dispatch({type: GET_TODOS_FAILED, payload: error.message})
     }
 }
+
+export default getAllTodos;
